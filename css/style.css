@@ -1,0 +1,236 @@
+/* css all command */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+:root{
+    --navbar-height:60px;
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+
+}
+
+/* navigation bar: Logo and Image */
+#logo{
+    margin: 35px 45px;
+    border-radius: 50%;
+    height: auto;
+}
+
+#logo img{
+    height: 105px;
+    margin: -11px -14px;
+    padding: 0px 0px;
+    border-radius: 50%;
+}
+
+/* navigation bar: list style */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 84%;
+    width: 100%; 
+    z-index: -1;   
+    opacity: 0.5;
+}
+
+
+
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;    /* inline row */
+    padding: 7px 8px;  /* space */
+    border-radius: 20px;
+    text-decoration: none;   /* underline remove */
+    margin: 51px 27px;
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 318px 130px;
+    height: 0px;
+    justify-content: center;  /* x axis center */
+    align-items: center;   /* y axis center */
+}
+
+#home::before{
+    content: "";
+    background: url('../img/brsh.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%; 
+    z-index: -1;   
+    opacity: 0.9;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    /* height: 500px; */
+}
+/* services conatiner */
+#services{
+    margin: 20px 0px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px 34px;
+    margin: 3px 6px;
+    border-radius: 30px;
+    background: #f2f2f2;
+
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    font-family:initial;
+}
+
+/* Client-section */
+#client-section{
+    height: 344px;
+    position: relative;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 148vh;
+    top: 0px;
+    left: 0px;
+    width: 220vh;
+    padding: 0px 0px;
+    margin-top: 0px;
+    
+}
+
+/* #client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../img/Graphic2.JPG') no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    
+} */
+
+/* utility classess */
+
+.h-primary{
+    font-size: 3rem;
+    padding: 3px;
+
+}
+
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+
+}
+
+.btn{
+    padding: 6px 15px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 20px;
+    font-size: 0.8rem;
+    border-radius: 17px;
+    cursor: pointer;
+
+}
+
+.center{
+    text-align: center;
+}
+
+#contact{
+    /* position: relative; */
+    padding: 197px 0px;
+    margin: 426px 0px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../img/photo.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.1rem ;
+}
+#contact-box input,
+#contact-box textarea{
+    margin: 2px 36px;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.0rem;
+    font-family: 'Lora', serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 16px 20px;
+    margin: -512px 0px;
+}
