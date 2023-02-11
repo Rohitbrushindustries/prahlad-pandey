@@ -25,17 +25,23 @@
 
 #navbar ul li a{
     font-size: 1rem;
-    padding: 0px 7px;
-    padding-bottom: 8px;
+    padding: 0px 0px;
+    padding-bottom: 5px;
+    margin: 0px 12px;
 }
 /* Home section */
 #home{
     height: 370px; 
-    padding: 3px 28px;
+    padding: 0px 15px;
+    margin: 40px 0px;
 }
 
 #home::before{
-    height: 480px; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 77%;
+    width: 100%; 
 }
 
 #home p{
@@ -45,6 +51,7 @@
 /* Services section  */
 #services{
     flex-direction: column;
+    margin: 0px 0px;
 }
 
 #services .box { 
@@ -58,10 +65,10 @@
     flex-wrap: wrap;
 }
 
-#clients img{
-    width: 66px;
-    padding: 6px;
-    height: auto;
+#clients img {
+    width: 357px;
+    padding: 7px;
+    height: 485px;
 }
 
 /* Contact us section */
@@ -77,4 +84,44 @@
 .btn{
     font-size: 13px;
     padding: 4px 8px;
+}
+
+#logo img {
+    height: 69px;
+    margin: -25px -20px;
+    padding: 0px 0px;
+    border-radius: 50%;
+    
+}
+    
+#navbar::before{
+    height: 100%;
+}
+
+#contact {
+    /* position: absolute;  */
+    padding: 73px 0px;
+    margin: 114px 0px;
+}
+
+
+footer{
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    margin: -156px 0px;
+}
+
+#contact-box input, #contact-box textarea {
+    margin: 0px 0px;
+    width: 100%;
+    padding: 0.3rem 0.6rem;
+}
+
+#contact::before {
+    
+    
+    width: 100%;
+    height: 64%;
 }

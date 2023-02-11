@@ -8,13 +8,17 @@
     --navbar-height:60px;
 }
 
+html{
+    scroll-behavior:smooth;
+}
 /* navigation bar */
 #navbar{
     display: flex;
     align-items: center;
-    position: absolute;
+    position: sticky;
     top: 0px;
     left: 0px;
+    /* justify-content: center; */
     
 
 }
@@ -48,6 +52,7 @@
     width: 100%; 
     z-index: -1;   
     opacity: 0.5;
+    /* justify-content: center; */
 }
 
 
@@ -77,7 +82,7 @@
 #home {
     display: flex;
     flex-direction: column;
-    padding: 318px 130px;
+    padding: 236px 130px;
     height: 0px;
     justify-content: center;  /* x axis center */
     align-items: center;   /* y axis center */
